@@ -1,4 +1,3 @@
-const { response } = require("express");
 const repo = require("./repository");
 
 const getUsers = async (req, res) => {
@@ -28,7 +27,7 @@ const insertUser = async (req, res) => {
 
     await respo.insertUser({ name, lastname, email });
     res.status(200).send(req.body);
-  } catch {}
+  } catch { }
 };
 
 module.exports = { getUsers, insertUser, updateUser };

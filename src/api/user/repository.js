@@ -1,7 +1,8 @@
-const knex = require("../../database");
+const knex = require('../../database');
 
 const getUsers = async () => {
-  const query = await knex.selct().from("usuarios");
+  
+  const query = await knex.select().from('menu');
 
   return query;
 };

@@ -8,6 +8,7 @@ const connectionData = {
     password: DB_PASS,
     host: DB_HOST,
     database: DB_SCHEMA,
+    dateStrings: true
   },
 };
 

@@ -1,6 +1,6 @@
-require("dotenv").config();
-const config = require("./knexfile.js");
-const knex = require("knex")(config);
+require('dotenv').config();
+const config = require('./knexfile.js');
+const knex = require('knex')(config);
 
 knex.executeProcedure = async () => {};
 knex.executeFunction = async () => {};
