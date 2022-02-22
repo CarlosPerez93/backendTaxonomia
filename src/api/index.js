@@ -10,7 +10,7 @@ const order = require("./order");
 const family = require("./family");
 const gender = require("./gender");
 const species = require("./species");
-const species_characteristics = require("./species_characteristics");
+/* const species_characteristics = require("./species_characteristics"); */
 
 genericRoutes.use("/user", user);
 genericRoutes.use("/kingdom", kingdom);
@@ -19,6 +19,6 @@ genericRoutes.use("/class", classs);
 genericRoutes.use("/order", order);
 genericRoutes.use("/gender", gender);
 genericRoutes.use("/species", species);
-genericRoutes.use("/species_characteristics", species_characteristics);
+/* genericRoutes.use("/species_characteristics", species_characteristics); */
 
 module.exports = genericRoutes;

@@ -23,8 +23,8 @@ const updateSpecies = async (req, res) => {
     } = req.body;
 
     await repo.updateSpecies({
-      name_Species,
       id_Species,
+      name_Species,
       common_name,
       registration_date,
       photo,

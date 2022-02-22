@@ -12,7 +12,7 @@ const insertSpecies = async ({
   registration_date,
   photo,
   cantidad,
-  id_Species,
+  id_Gender,
 }) => {
   return knex
     .insert({
@@ -21,7 +21,7 @@ const insertSpecies = async ({
       registration_date: registration_date,
       photo: photo,
       cantidad: cantidad,
-      id_Species: id_Species,
+      id_Gender: id_Gender,
     })
     .into("clases");
 };
@@ -33,18 +33,16 @@ const updateSpecies = ({
   registration_date,
   photo,
   cantidad,
-  id_Species,
+  id_Gender,
 }) => {
-  return knex("clases")
-    .where({ idSpecies: id_Species })
-    .update({
-      Name_Species: name_Species,
-      common_name: common_name,
-      registration_date: registration_date,
-      photo: photo,
-      cantidad: cantidad,
-      id_Species: id_Species,
-    });
+  return knex("clases").where({ idSpecies: id_Species }).update({
+    Name_Species: name_Species,
+    common_name: common_name,
+    registration_date: registration_date,
+    photo: photo,
+    cantidad: cantidad,
+    id_Gender: id_Gender,
+  });
 };
 
 module.exports = { getSpecies, insertSpecies, updateSpecies };
